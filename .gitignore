@@ -1,0 +1,44 @@
+# ───────── macOS ─────────
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# ───────── Editors / IDE ─────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ───────── PlatformIO build artifacts ─────────
+firmware/.pio/
+firmware/.pioenvs/
+firmware/.piolibdeps/
+firmware/.clang_complete
+firmware/.gcc-flags.json
+firmware/.vscode/
+firmware/compile_commands.json
+
+# ───────── Python venv (used for SDR decode scripts) ─────────
+.venv/
+__pycache__/
+*.pyc
+
+# ───────── KiCad autosaves / backups ─────────
+Minka-Aire/*-backups/
+Minka-Aire/_autosave-*
+Minka-Aire/~*.lck
+Minka-Aire/fp-info-cache
+
+# ───────── Session / scratch data ─────────
+capt.txt
+*.log
+
+# ───────── Claude Code memory (local to each machine) ─────────
+.claude/
+
+# ───────── Large SDR captures (>50MB) — keep out of git ─────────
+baseband_*.wav
+*.iq
+*.raw
